@@ -1,0 +1,68 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - OneWayPlatform
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - Player
+  - Water
+  - UI
+  - Ground
+  - Enemy
+  - Activator
+  - Ladder
+  - Back
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: VeryFar
+    uniqueID: 2596293203
+    locked: 0
+  - name: Far
+    uniqueID: 1744208179
+    locked: 0
+  - name: Mid
+    uniqueID: 4138739657
+    locked: 0
+  - name: Back
+    uniqueID: 3757399193
+    locked: 0
+  - name: Ground
+    uniqueID: 2526426683
+    locked: 0
+  - name: Player
+    uniqueID: 497089259
+    locked: 0
+  - name: Close
+    uniqueID: 921523539
+    locked: 0
+  - name: Walls
+    uniqueID: 4088477409
+    locked: 0
