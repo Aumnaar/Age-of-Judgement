@@ -74,7 +74,7 @@ public class PlayerMov : MonoBehaviour
 
 
 
-        //rb.velocity = new Vector2(horizontalInput * _speed, rb.velocity.y); \\cant jump freely without it, though
+        /*rb.velocity = new Vector2(horizontalInput * _speed, rb.velocity.y);*/ /*cant jump freely without it, though*/
 
 
 

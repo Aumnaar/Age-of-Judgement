@@ -23,6 +23,10 @@ public class IdleBehaviour : StateMachineBehaviour
         {
             CombatManager.instance.anim.Play("Aerial1");
         }
+        else if (Input.GetKeyDown(KeyCode.R) && _playerMov.isGrounded())
+        {
+            CombatManager.instance.anim.Play("Crush");
+        }
 
     }
 

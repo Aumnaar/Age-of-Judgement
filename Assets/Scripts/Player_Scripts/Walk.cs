@@ -21,10 +21,10 @@ public class Walk : StateMachineBehaviour
         float horizontalInput = Input.GetAxis("Horizontal");
         float verticalInput = Input.GetAxis("Vertical");
 
-        //if (horizontalInput != 0)
-       
+        if (horizontalInput != 0)
+        {
             rb.velocity = new Vector2(horizontalInput * _speed, rb.velocity.y);
-           
+        }
 
 
         

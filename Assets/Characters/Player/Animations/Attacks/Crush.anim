@@ -6,7 +6,7 @@ AnimationClip:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: HA1
+  m_Name: Crush
   serializedVersion: 6
   m_Legacy: 0
   m_Compressed: 0
@@ -22,24 +22,6 @@ AnimationClip:
       m_Curve:
       - serializedVersion: 3
         time: 0
-        value: 0
-        inSlope: Infinity
-        outSlope: Infinity
-        tangentMode: 103
-        weightedMode: 0
-        inWeight: 0
-        outWeight: 0
-      - serializedVersion: 3
-        time: 0.083333336
-        value: 0
-        inSlope: Infinity
-        outSlope: Infinity
-        tangentMode: 103
-        weightedMode: 0
-        inWeight: 0
-        outWeight: 0
-      - serializedVersion: 3
-        time: 0.33333334
         value: 1
         inSlope: Infinity
         outSlope: Infinity
@@ -48,7 +30,7 @@ AnimationClip:
         inWeight: 0
         outWeight: 0
       - serializedVersion: 3
-        time: 0.5833333
+        time: 0.16666667
         value: 0
         inSlope: Infinity
         outSlope: Infinity
@@ -57,8 +39,8 @@ AnimationClip:
         inWeight: 0
         outWeight: 0
       - serializedVersion: 3
-        time: 0.75
-        value: 0
+        time: 0.4166667
+        value: 1
         inSlope: Infinity
         outSlope: Infinity
         tangentMode: 103
@@ -69,26 +51,26 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_Enabled
-    path: HeavyAttack1
+    path: Crush
     classID: 60
     script: {fileID: 0}
   m_PPtrCurves:
   - curve:
     - time: 0
-      value: {fileID: -1000150256, guid: 0b9e49f6e0185e340bf73f7d210b320c, type: 3}
+      value: {fileID: -375406925, guid: a5053ed9def9793419f72494a89ee132, type: 3}
     - time: 0.083333336
-      value: {fileID: -1000150256, guid: 0b9e49f6e0185e340bf73f7d210b320c, type: 3}
+      value: {fileID: 63417444, guid: a5053ed9def9793419f72494a89ee132, type: 3}
+    - time: 0.16666667
+      value: {fileID: 1927331889, guid: a5053ed9def9793419f72494a89ee132, type: 3}
+    - time: 0.25
+      value: {fileID: -1822215055, guid: a5053ed9def9793419f72494a89ee132, type: 3}
     - time: 0.33333334
-      value: {fileID: -743801171, guid: 0b9e49f6e0185e340bf73f7d210b320c, type: 3}
-    - time: 0.5833333
-      value: {fileID: 1089355528, guid: 0b9e49f6e0185e340bf73f7d210b320c, type: 3}
-    - time: 0.6666667
-      value: {fileID: 1089355528, guid: 0b9e49f6e0185e340bf73f7d210b320c, type: 3}
+      value: {fileID: -1259034806, guid: a5053ed9def9793419f72494a89ee132, type: 3}
     attribute: m_Sprite
     path: 
     classID: 212
     script: {fileID: 0}
-  m_SampleRate: 60
+  m_SampleRate: 12
   m_WrapMode: 0
   m_Bounds:
     m_Center: {x: 0, y: 0, z: 0}
@@ -96,7 +78,7 @@ AnimationClip:
   m_ClipBindingConstant:
     genericBindings:
     - serializedVersion: 2
-      path: 50021101
+      path: 218551415
       attribute: 3305885265
       script: {fileID: 0}
       typeID: 60
@@ -110,22 +92,22 @@ AnimationClip:
       customType: 23
       isPPtrCurve: 1
     pptrCurveMapping:
-    - {fileID: -1000150256, guid: 0b9e49f6e0185e340bf73f7d210b320c, type: 3}
-    - {fileID: -1000150256, guid: 0b9e49f6e0185e340bf73f7d210b320c, type: 3}
-    - {fileID: -743801171, guid: 0b9e49f6e0185e340bf73f7d210b320c, type: 3}
-    - {fileID: 1089355528, guid: 0b9e49f6e0185e340bf73f7d210b320c, type: 3}
-    - {fileID: 1089355528, guid: 0b9e49f6e0185e340bf73f7d210b320c, type: 3}
+    - {fileID: -375406925, guid: a5053ed9def9793419f72494a89ee132, type: 3}
+    - {fileID: 63417444, guid: a5053ed9def9793419f72494a89ee132, type: 3}
+    - {fileID: 1927331889, guid: a5053ed9def9793419f72494a89ee132, type: 3}
+    - {fileID: -1822215055, guid: a5053ed9def9793419f72494a89ee132, type: 3}
+    - {fileID: -1259034806, guid: a5053ed9def9793419f72494a89ee132, type: 3}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-    m_StopTime: 0.75
+    m_StopTime: 0.4166667
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0
     m_HasAdditiveReferencePose: 0
-    m_LoopTime: 0
+    m_LoopTime: 1
     m_LoopBlend: 0
     m_LoopBlendOrientation: 0
     m_LoopBlendPositionY: 0
@@ -141,24 +123,6 @@ AnimationClip:
       m_Curve:
       - serializedVersion: 3
         time: 0
-        value: 0
-        inSlope: Infinity
-        outSlope: Infinity
-        tangentMode: 103
-        weightedMode: 0
-        inWeight: 0
-        outWeight: 0
-      - serializedVersion: 3
-        time: 0.083333336
-        value: 0
-        inSlope: Infinity
-        outSlope: Infinity
-        tangentMode: 103
-        weightedMode: 0
-        inWeight: 0
-        outWeight: 0
-      - serializedVersion: 3
-        time: 0.33333334
         value: 1
         inSlope: Infinity
         outSlope: Infinity
@@ -167,7 +131,7 @@ AnimationClip:
         inWeight: 0
         outWeight: 0
       - serializedVersion: 3
-        time: 0.5833333
+        time: 0.16666667
         value: 0
         inSlope: Infinity
         outSlope: Infinity
@@ -176,8 +140,8 @@ AnimationClip:
         inWeight: 0
         outWeight: 0
       - serializedVersion: 3
-        time: 0.75
-        value: 0
+        time: 0.4166667
+        value: 1
         inSlope: Infinity
         outSlope: Infinity
         tangentMode: 103
@@ -188,7 +152,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_Enabled
-    path: HeavyAttack1
+    path: Crush
     classID: 60
     script: {fileID: 0}
   m_EulerEditorCurves: []

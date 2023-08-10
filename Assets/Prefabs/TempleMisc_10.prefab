@@ -153,7 +153,7 @@ MonoBehaviour:
   enemy: {fileID: 5244304324001566713}
   animator: {fileID: 0}
   isShaking: 0
-  shakeAmount: 0.005
+  shakeAmount: 0.05
 --- !u!95 &5244304324001566715
 Animator:
   serializedVersion: 5
