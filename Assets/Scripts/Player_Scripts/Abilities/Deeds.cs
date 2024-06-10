@@ -8,11 +8,17 @@ public class Deeds : MonoBehaviour
     [SerializeField] private Animator anim;
     [SerializeField] private Rigidbody2D rb;
     [SerializeField] private Vector2 vector;
-    private string currentState;
-    private float delay;
     private float timer;
+    public GameObject teleportPoint;
 
-    
+
+    public GameObject weather;
+    public GameObject _lightClouds;
+    public GameObject _darkClouds;
+    public GameObject _rain;
+    public bool _isClear = true;
+
+
     const string IDLE = "Idle";
     const string JUMP = "Jump";
 
@@ -29,31 +35,40 @@ public class Deeds : MonoBehaviour
        
     }
 
-    void Update()
+    public void Teleport()
     {
-     
-
-      
+        transform.position = new Vector2(teleportPoint.transform.position.x, teleportPoint.transform.position.x);
+    }
+ 
+    public void Weather()
+    {
+        StartCoroutine(WeatherDelete());
     }
 
-    void ChangeAnimationState(string NewState)
+    private IEnumerator WeatherDelete()
     {
-        if (currentState == NewState) return;
-
-        anim.Play(NewState);
-
-        currentState = NewState;
-        
-    }
-
-    void Ground()
-    {
-        if (mov.isGrounded()) 
+        if (_isClear)
         {
-            
-            
-
+            _isClear = false;
+            weather.SetActive(true);
+            yield return new WaitForSeconds(1);
+            _lightClouds.SetActive(false);
+            _darkClouds.SetActive(true);
+            _rain.SetActive(true);
+            yield return new WaitForSeconds(1);
+            weather.SetActive(false);
         }
-    }        
+        else
+        {
+            _isClear = true;
+            weather.SetActive(true);
+            yield return new WaitForSeconds(1);
+            _lightClouds.SetActive(true);
+            _rain.SetActive(false);
+            _darkClouds.SetActive(false);
+            yield return new WaitForSeconds(1);
+            weather.SetActive(false);
+        }
+    }
 
 }

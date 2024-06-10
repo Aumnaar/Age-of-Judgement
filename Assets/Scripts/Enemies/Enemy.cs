@@ -1,17 +1,16 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class Enemy : MonoBehaviour
 {
+    public UnityEvent<int, Vector2> damagableHit;
 
     public int maxHealth = 80;
     public int currenthealth;
-    private int npcdamage = 5;
+    public Rigidbody2D rb;
 
-    public Transform attackPoint;
-    public float attackRange = 0.5f;
-    public float attackRate = 2f;
     public LayerMask player;
     public Animator animator;
 
@@ -23,8 +22,12 @@ public class Enemy : MonoBehaviour
 
     float nextAttackTime = 0f;
 
+  
+
     void Start()
     {
+        animator = GetComponent<Animator>();
+        rb = GetComponent<Rigidbody2D>();
         currenthealth = maxHealth;
     }
 
@@ -42,64 +45,36 @@ public class Enemy : MonoBehaviour
 
         }
 
-        if (!isAlive)
-        {
-            Invoke("Die", 1f);
-        }
+       // if (!isAlive)
+       // {
+           // Invoke("Die", 1f);
+      //  }//
 
-        //if (Time.time >= nextAttackTime)
-        //{
-        //    animator.SetTrigger("Attack");
-        //    ///Attack();
-        //    nextAttackTime = Time.time + 1f / attackRate;
-        
-
-        //}
     }
 
-    public void TakeDamage(int damage)
+    public void TakeDamage(int damage, Vector2 deliveredKnockback)
     {
         if (isAlive && !isInvincible) 
         {
+            damagableHit.Invoke(damage, deliveredKnockback);
             currenthealth -= damage;
             isInvincible = true;
+
         }
 
         if (currenthealth <= 0)
         {
+            //animator.SetTrigger("Death");
             isAlive = false;
-            
+            Die();
+
         }
     }
 
-    //public void TakeDamage(int damage)
-    //{
-    //    currenthealth -= damage;
-
-
-    //    if (currenthealth <= 0)
-    //    {
-    //        Die();
-    //    }
-    //}
-
-    //public void Attack()
-    //{
-    //    Collider2D[] hitPlayer = Physics2D.OverlapCircleAll(attackPoint.position, attackRange, player);
-    //    foreach (Collider2D player in hitPlayer)
-    //    {
-    //        Debug.Log("We hit" + player.name);
-    //        player.GetComponent<PlayerCombat>().TakeDamage(npcdamage);
-    //    }
-
-    //}
-
-    void OnDrawGizmosSelected()
+    public void OnHit (int damage, Vector2 deliveredKnockback)
     {
-        if (attackPoint == null)
-            return;
-
-        Gizmos.DrawWireSphere(attackPoint.position, attackRange);
+        animator.SetTrigger("onHit");
+        rb.velocity = new Vector2(deliveredKnockback.x, rb.velocity.y);
     }
 
     private void Die()

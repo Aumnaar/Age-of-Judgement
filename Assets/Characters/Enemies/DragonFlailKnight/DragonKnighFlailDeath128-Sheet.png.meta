@@ -1,0 +1,673 @@
+fileFormatVersion: 2
+guid: 9f59b9aed8702b34380431b5418cc57d
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: DragonKnighFlailDeath128-Sheet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 205
+        height: 167
+      alignment: 9
+      pivot: {x: 0.5, y: 0.3943916}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0898bf7733442c2428b5d230f57c9adb
+      internalID: 1767641294
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DragonKnighFlailDeath128-Sheet_1
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 0
+        width: 205
+        height: 167
+      alignment: 9
+      pivot: {x: 0.5, y: 0.3943916}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08c5bf19b66ffea47a16d237a2f45ac6
+      internalID: -1730065406
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DragonKnighFlailDeath128-Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 410
+        y: 0
+        width: 205
+        height: 167
+      alignment: 9
+      pivot: {x: 0.5, y: 0.3943916}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cfbb03edee32de246a5f00d67bf60629
+      internalID: -1407026725
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DragonKnighFlailDeath128-Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 615
+        y: 0
+        width: 205
+        height: 167
+      alignment: 9
+      pivot: {x: 0.5, y: 0.3943916}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1355f91186544d04183cda8454352a97
+      internalID: -1185443563
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DragonKnighFlailDeath128-Sheet_4
+      rect:
+        serializedVersion: 2
+        x: 820
+        y: 0
+        width: 205
+        height: 167
+      alignment: 9
+      pivot: {x: 0.5, y: 0.3943916}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de377496f8921ed49b3ae0c12ac73f07
+      internalID: -1983594839
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DragonKnighFlailDeath128-Sheet_5
+      rect:
+        serializedVersion: 2
+        x: 1025
+        y: 0
+        width: 205
+        height: 167
+      alignment: 9
+      pivot: {x: 0.5, y: 0.3943916}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4fb09243ba92159459d1a7b830592aa3
+      internalID: 2034803101
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DragonKnighFlailDeath128-Sheet_6
+      rect:
+        serializedVersion: 2
+        x: 1230
+        y: 0
+        width: 205
+        height: 167
+      alignment: 9
+      pivot: {x: 0.5, y: 0.3943916}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12bdf3b8c712eef4f874de49decde4ee
+      internalID: -963162617
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DragonKnighFlailDeath128-Sheet_7
+      rect:
+        serializedVersion: 2
+        x: 1435
+        y: 0
+        width: 205
+        height: 167
+      alignment: 9
+      pivot: {x: 0.5, y: 0.3943916}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bbd702f73839efe4589ec9b1d25bcaee
+      internalID: 1049900696
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DragonKnighFlailDeath128-Sheet_8
+      rect:
+        serializedVersion: 2
+        x: 1640
+        y: 0
+        width: 205
+        height: 167
+      alignment: 9
+      pivot: {x: 0.5, y: 0.3943916}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a822c081746834846979e3bc3b1d47c8
+      internalID: -749887080
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DragonKnighFlailDeath128-Sheet_9
+      rect:
+        serializedVersion: 2
+        x: 1845
+        y: 0
+        width: 205
+        height: 167
+      alignment: 9
+      pivot: {x: 0.5, y: 0.3943916}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 076afd2242495be47a7519a3ee157d57
+      internalID: 918157481
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DragonKnighFlailDeath128-Sheet_10
+      rect:
+        serializedVersion: 2
+        x: 2050
+        y: 0
+        width: 205
+        height: 167
+      alignment: 9
+      pivot: {x: 0.5, y: 0.3943916}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68b71e423180e9149ae4dd7e2aafae70
+      internalID: -1835499406
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DragonKnighFlailDeath128-Sheet_11
+      rect:
+        serializedVersion: 2
+        x: 2255
+        y: 0
+        width: 205
+        height: 167
+      alignment: 9
+      pivot: {x: 0.5, y: 0.3943916}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ae03fdc58a4253469ccf9b358657162
+      internalID: 1875351477
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DragonKnighFlailDeath128-Sheet_12
+      rect:
+        serializedVersion: 2
+        x: 2460
+        y: 0
+        width: 205
+        height: 167
+      alignment: 9
+      pivot: {x: 0.5, y: 0.3943916}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 196c597828738e54db4c8d47991a5b75
+      internalID: -166577009
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DragonKnighFlailDeath128-Sheet_13
+      rect:
+        serializedVersion: 2
+        x: 2665
+        y: 0
+        width: 205
+        height: 167
+      alignment: 9
+      pivot: {x: 0.5, y: 0.3943916}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96528f5d51103ae4ab6588a8f90682cb
+      internalID: -469881171
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DragonKnighFlailDeath128-Sheet_14
+      rect:
+        serializedVersion: 2
+        x: 2870
+        y: 0
+        width: 205
+        height: 167
+      alignment: 9
+      pivot: {x: 0.5, y: 0.3943916}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c03e4c54340a6b44d9b0db36838487d2
+      internalID: 1337319886
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DragonKnighFlailDeath128-Sheet_15
+      rect:
+        serializedVersion: 2
+        x: 3075
+        y: 0
+        width: 205
+        height: 167
+      alignment: 9
+      pivot: {x: 0.5, y: 0.3943916}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1cc6cd676eb6ff5499f5f379f85702ed
+      internalID: 464681393
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DragonKnighFlailDeath128-Sheet_16
+      rect:
+        serializedVersion: 2
+        x: 3280
+        y: 0
+        width: 205
+        height: 167
+      alignment: 9
+      pivot: {x: 0.5, y: 0.3943916}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a315842ad618e1a499dc326859da8429
+      internalID: -1910749673
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DragonKnighFlailDeath128-Sheet_17
+      rect:
+        serializedVersion: 2
+        x: 3485
+        y: 0
+        width: 205
+        height: 167
+      alignment: 9
+      pivot: {x: 0.5, y: 0.3943916}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2bddcfce934d0e45bd4c95bab601644
+      internalID: -1719059079
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DragonKnighFlailDeath128-Sheet_18
+      rect:
+        serializedVersion: 2
+        x: 3690
+        y: 0
+        width: 205
+        height: 167
+      alignment: 9
+      pivot: {x: 0.5, y: 0.3943916}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4eb237567ea568746b022536b4b1e280
+      internalID: -2105033818
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DragonKnighFlailDeath128-Sheet_19
+      rect:
+        serializedVersion: 2
+        x: 3895
+        y: 0
+        width: 205
+        height: 167
+      alignment: 9
+      pivot: {x: 0.5, y: 0.3943916}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96039289bfae1c34599681d6a21ba814
+      internalID: 189193549
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DragonKnighFlailDeath128-Sheet_20
+      rect:
+        serializedVersion: 2
+        x: 4100
+        y: 0
+        width: 205
+        height: 167
+      alignment: 9
+      pivot: {x: 0.5, y: 0.3943916}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82b7e2ad0dfea5c4a844dfc5c84638cb
+      internalID: -61499322
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DragonKnighFlailDeath128-Sheet_21
+      rect:
+        serializedVersion: 2
+        x: 4305
+        y: 0
+        width: 205
+        height: 167
+      alignment: 9
+      pivot: {x: 0.5, y: 0.3943916}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d54a9bf585f4fa4d8761cc3a5b28c20
+      internalID: -894390267
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DragonKnighFlailDeath128-Sheet_22
+      rect:
+        serializedVersion: 2
+        x: 4510
+        y: 0
+        width: 205
+        height: 167
+      alignment: 9
+      pivot: {x: 0.5, y: 0.3943916}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83cd9757f85039e40bcd9c211abe624c
+      internalID: 1084542398
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DragonKnighFlailDeath128-Sheet_23
+      rect:
+        serializedVersion: 2
+        x: 4715
+        y: 0
+        width: 205
+        height: 167
+      alignment: 9
+      pivot: {x: 0.5, y: 0.3943916}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4644bac7afac70840b012b7526118cdf
+      internalID: -760649204
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DragonKnighFlailDeath128-Sheet_24
+      rect:
+        serializedVersion: 2
+        x: 4920
+        y: 0
+        width: 205
+        height: 167
+      alignment: 9
+      pivot: {x: 0.5, y: 0.3943916}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5aae5c731cc2164eb35d511174b556c
+      internalID: -1847967029
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      DragonKnighFlailDeath128-Sheet_0: 1767641294
+      DragonKnighFlailDeath128-Sheet_1: -1730065406
+      DragonKnighFlailDeath128-Sheet_10: -1835499406
+      DragonKnighFlailDeath128-Sheet_11: 1875351477
+      DragonKnighFlailDeath128-Sheet_12: -166577009
+      DragonKnighFlailDeath128-Sheet_13: -469881171
+      DragonKnighFlailDeath128-Sheet_14: 1337319886
+      DragonKnighFlailDeath128-Sheet_15: 464681393
+      DragonKnighFlailDeath128-Sheet_16: -1910749673
+      DragonKnighFlailDeath128-Sheet_17: -1719059079
+      DragonKnighFlailDeath128-Sheet_18: -2105033818
+      DragonKnighFlailDeath128-Sheet_19: 189193549
+      DragonKnighFlailDeath128-Sheet_2: -1407026725
+      DragonKnighFlailDeath128-Sheet_20: -61499322
+      DragonKnighFlailDeath128-Sheet_21: -894390267
+      DragonKnighFlailDeath128-Sheet_22: 1084542398
+      DragonKnighFlailDeath128-Sheet_23: -760649204
+      DragonKnighFlailDeath128-Sheet_24: -1847967029
+      DragonKnighFlailDeath128-Sheet_3: -1185443563
+      DragonKnighFlailDeath128-Sheet_4: -1983594839
+      DragonKnighFlailDeath128-Sheet_5: 2034803101
+      DragonKnighFlailDeath128-Sheet_6: -963162617
+      DragonKnighFlailDeath128-Sheet_7: 1049900696
+      DragonKnighFlailDeath128-Sheet_8: -749887080
+      DragonKnighFlailDeath128-Sheet_9: 918157481
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

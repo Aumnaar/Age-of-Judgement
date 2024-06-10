@@ -21,26 +21,36 @@ public class Walk : StateMachineBehaviour
         float horizontalInput = Input.GetAxis("Horizontal");
         float verticalInput = Input.GetAxis("Vertical");
 
-        if (horizontalInput != 0)
+
+
+        rb.velocity = new Vector2(horizontalInput * _speed, rb.velocity.y);
+
+        if (horizontalInput == 0)
         {
-            rb.velocity = new Vector2(horizontalInput * _speed, rb.velocity.y);
+            animator.SetBool("Walk", false);
         }
 
 
-        
-        ////else
-        //{
-        //    rb.velocity = new Vector2(0, rb.velocity.y);
-           
-        //}
 
+        if (CombatManager.instance._isAttacking && _playerMov.isGrounded())
+        {
+            CombatManager.instance.anim.Play("HA1");
+        }
+        else if (CombatManager.instance._isAttacking && !_playerMov.isGrounded())
+        {
+            CombatManager.instance.anim.Play("Aerial1");
+        }
+        else if (Input.GetKeyDown(KeyCode.R) && _playerMov.isGrounded())
+        {
+            CombatManager.instance.anim.Play("Crush");
+        }
 
     }
 
     // OnStateExit is called when a transition ends and the state machine finishes evaluating this state
     override public void OnStateExit(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
-        
+        CombatManager.instance._isAttacking = false;
     }
 
     // OnStateMove is called right after Animator.OnAnimatorMove()

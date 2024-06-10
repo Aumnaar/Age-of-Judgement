@@ -8,13 +8,13 @@ public class LookAtPlayer : MonoBehaviour
     public Transform player;
     public Transform GC;
 
-    bool isFlipped = false;
+    bool isFlipped = true;
 
 
     public void LookToPlayer()
     {
         Vector3 flipped = transform.localScale;
-        flipped.z *= -1f;
+        flipped.z *= 0;
 
         if (transform.position.x > player.position.x && isFlipped)
         {

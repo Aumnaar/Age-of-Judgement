@@ -15,12 +15,19 @@ public class PlayerMov : MonoBehaviour
     [SerializeField] public bool _canWalk;
     public bool _isAttacking = false;
     public bool _walking;
+    [SerializeField] int glideSpeed = 10;
+
+
+    [Header("SlopeManagment")]
+    [SerializeField] private Transform raycastOrigin;
+    [SerializeField] private Transform playerBottom;
+    private RaycastHit2D Hit2D;
 
 
     [Header("Additional Jumps")]
     [SerializeField] private int extraJumps;
     private int jumpCounter;
-
+    
 
     [Header("Coyote Time")]
     [SerializeField] private float coyoteTime;
@@ -67,6 +74,8 @@ public class PlayerMov : MonoBehaviour
     void Update()
     {
 
+        SlopeMathod();
+
         ////MOVEMENT//////
 
         float horizontalInput = Input.GetAxis("Horizontal");
@@ -74,55 +83,57 @@ public class PlayerMov : MonoBehaviour
 
 
 
-        /*rb.velocity = new Vector2(horizontalInput * _speed, rb.velocity.y);*/ /*cant jump freely without it, though*/
+        //rb.velocity = new Vector2(horizontalInput * _speed, rb.velocity.y);
 
+        ////Special Abilities////
 
+        if (Input.GetKeyDown(KeyCode.T))
+        {
+            deeds.Teleport();
+        }
 
-        //if (isGrounded())
+        if (Input.GetKeyDown(KeyCode.C))
+        {
+            deeds.Weather();
+        }
+
+        //if (isGrounded() && horizontalInput != 0 && _canWalk && !CombatManager.instance._isAttacking)
         //{
-
-
-            if (isGrounded() && horizontalInput != 0 && _canWalk && !CombatManager.instance._isAttacking)
-            {
-                //rb.velocity = new Vector2(horizontalInput * _speed, rb.velocity.y);
-                //anim.SetBool("Walk", true);
-                //anim.Play("Walk");
-                ChangeAnimationState(WALK);
-            }
-            else
-            {
-                //rb.velocity = new Vector2(0, rb.velocity.y);
-                //anim.SetBool("Walk", false);
-                //anim.Play("Idle");
-                ChangeAnimationState(IDLE);
-            }
-
-
+        //    //rb.velocity = new Vector2(horizontalInput * _speed, rb.velocity.y);
+        //    //anim.SetBool("Walk", true);
+        //    //anim.Play("Walk");
+        //    ChangeAnimationState(WALK);
         //}
-
-
-
-
-
-        //if (isGrounded())
+        //else
         //{
-
-        //    anim.SetBool("Walk", horizontalInput != 0);
-
+        //    //rb.velocity = new Vector2(0, rb.velocity.y);
+        //    //anim.SetBool("Walk", false);
+        //    //anim.Play("Idle");
+        //    ChangeAnimationState(IDLE);
         //}
+  
 
         if (horizontalInput > 0)
             transform.localScale = Vector3.one;
         else if (horizontalInput < 0)
             transform.localScale = new Vector3(-1, 1, 1);
 
-        ////////
-        ///
-        /// 
 
-        ///
+        if (isGrounded() && horizontalInput == 0)
+        {
+            rb.velocity = Vector2.zero;
+            rb.isKinematic = true;
+            rb.constraints = RigidbodyConstraints2D.FreezePositionX | RigidbodyConstraints2D.FreezeRotation;
+        }
+        else
+        {
+            rb.isKinematic = false;
+            rb.constraints = RigidbodyConstraints2D.FreezeRotation;
+        }
 
-        ////JUMPING
+
+
+        ////JUMPING//////////////////
 
         if (isGrounded())
         {
@@ -147,12 +158,35 @@ public class PlayerMov : MonoBehaviour
         {
           rb.velocity = new Vector2(rb.velocity.x, rb.velocity.y / 2);
         }
-        //////
+       
     }
+
+    void FixedUpdate()
+    {
+        if (rb.velocity.magnitude > 5 && Input.GetKey(KeyCode.Space)) 
+        { rb.velocity = Vector2.ClampMagnitude(rb.velocity, 2); }
+
+    }
+    
+    ////////////////////////////////////////////////
+   
+    
 
     void Ignore()
     {
         Physics2D.IgnoreLayerCollision(3, 6, true);
+    }
+
+    private void SlopeMathod()
+    {
+        Hit2D= Physics2D.Raycast(raycastOrigin.position, -Vector2.up, -100f, _groundLayer);
+        if (Hit2D != false)
+        {
+            Vector2 temp = playerBottom.position;
+            temp.y = Hit2D.point.y;
+            playerBottom.position = temp;
+        
+        }
     }
 
     private void Jump()
@@ -163,6 +197,7 @@ public class PlayerMov : MonoBehaviour
         if (isGrounded())
         {
             rb.velocity = new Vector2(rb.velocity.x, _jumpPower);
+            //rb.AddForce(Vector2.up * _jumpPower, ForceMode2D.Impulse);
 
         }
     }

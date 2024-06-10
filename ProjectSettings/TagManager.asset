@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 2
   tags:
   - OneWayPlatform
+  - Boss
   layers:
   - Default
   - TransparentFX
@@ -17,8 +18,8 @@ TagManager:
   - Activator
   - Ladder
   - Back
-  - 
-  - 
+  - EnemyHitbox
+  - CliffDetection
   - 
   - 
   - 
@@ -56,6 +57,9 @@ TagManager:
     locked: 0
   - name: Ground
     uniqueID: 2526426683
+    locked: 0
+  - name: Nature
+    uniqueID: 1938791931
     locked: 0
   - name: Player
     uniqueID: 497089259
