@@ -30,6 +30,7 @@ public class agressiveWalking : StateMachineBehaviour
         if (animator.transform.position.x > player.position.x)
         {
             animator.transform.localScale = new Vector3(-1, 1, 1);
+
         }
         else if (animator.transform.position.x < player.position.x)
         {
@@ -42,8 +43,11 @@ public class agressiveWalking : StateMachineBehaviour
     // OnStateExit is called when a transition ends and the state machine finishes evaluating this state
     override public void OnStateExit(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
-        animator.SetBool("_agressiveWalking", false);
-        animator.SetBool("_isWalking", true);
+        if (_swordKnight._hasTarget == false && _swordKnight._hasAgro == false)
+        {
+            _swordKnight.FlipDirection();
+        }
+
     }
 
     // OnStateMove is called right after Animator.OnAnimatorMove()

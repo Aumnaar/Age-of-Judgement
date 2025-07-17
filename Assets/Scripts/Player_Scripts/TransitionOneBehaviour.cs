@@ -16,7 +16,7 @@ public class TransitionOneBehaviour : StateMachineBehaviour
         if (CombatManager.instance._isAttacking)
         {
         
-            CombatManager.instance.anim.Play("_heavyAttack2");
+            CombatManager.instance.anim.Play("StormHaloAttack_Two");
         }
     }
 

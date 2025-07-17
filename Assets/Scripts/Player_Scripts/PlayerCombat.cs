@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -6,70 +7,76 @@ using UnityEngine.UI;
 
 public class PlayerCombat : MonoBehaviour
 {
-    public int attackDamage = 10;
+    public CharacterMenu characterMenu;
+    public HeroHealth herohealth;
+    public PlayerMov playerMov;
+
+    private int veryBaseDamage;
+    public int baseAttackDamage;
+    public int baseManaRegen;
+    public int knockback = 2;
+
+    public int stormCrushManaCost;
+    public int lightningSpearManaCost;
    
     public LayerMask enemies;
     public GameObject player;
-    public bool isAlive = true;
-    public bool isInvincible = false;
 
-    //public HealthBar healthBar;
-
-    public int maxHealth = 80;
-    public int currentHealth;
+    public bool Syphoning;
 
     public float waiting = 1f;
     public Animator animator;
 
     float nextAttackTime = 0f;
 
-    void Start ()
+    private void Start()
     {
-        //currentHealth = maxHealth;
-        //healthBar.SetMaxHealth(maxHealth);
+        veryBaseDamage = baseAttackDamage;
+        animator = GetComponent<Animator>();
+        //baseAttackDamage = 10;
+        Number();
     }
 
-    void Update()
+    private void Update()
     {
-        //if (Time.time >= nextAttackTime)
-        //{
-        //    if (Input.GetMouseButtonDown(0))
-        //    {
-        //        ///Attack();
-        //        animator.SetTrigger("Attack");
-        //        nextAttackTime = Time.time + 1f / attackRate;
-        //    }
-        //}
-    }
-
-    //public void OnTriggerEnter2D(Collider2D collision)
-    //{
-    //    Enemy enemy = collision.GetComponent<Enemy>();
-
-    //   if (enemy != null)
-    //        {
-    //        Debug.Log("We hit" + enemy.name);
-    //        enemy.GetComponent<Enemy>().TakeDamage(attackDamage);
-           
-    //    }
-    //}
-
-    //public void TakeDamage(int damage)
-    //{
-    //    currentHealth -= damage;
-
-    //    healthBar.SetHealth(currentHealth);
-
-    //    if (currentHealth <= 0)
-    //    {
-    //           Die();
-    //    }
-    //}
-
-    private void Die()
-    {
-      
-        SceneManager.LoadScene(0);
        
+
+        if (Input.GetKeyDown(KeyCode.R) && characterMenu.StormCrushActive && playerMov.isGrounded() && herohealth.currentMana >= stormCrushManaCost)
+        {
+            animator.Play("Crush");
+            herohealth.MinusMana(stormCrushManaCost);
+        }
+
+        if (Input.GetKeyDown(KeyCode.V) && characterMenu.LightningSpearActive && playerMov.isGrounded())
+        {
+            Debug.Log("Lightning and thunder!");
+            herohealth.MinusMana(lightningSpearManaCost);
+        }
     }
+
+    private void Number()
+    {
+        //Mathf.Round(baseAttackDamage);
+        float Mana = (Mathf.Round(baseAttackDamage) / 100) * 30;
+
+        //baseManaRegen = Convert.ToInt32(baseAttackDamage / 100) * 30;
+        baseManaRegen = (int)Mana;
+    }
+
+    public void Syphon()
+    {
+        if (Syphoning)
+        {
+            var Damage = baseAttackDamage / 2;
+            baseAttackDamage = Damage;
+
+            baseManaRegen = baseManaRegen * 2;
+        }
+        else if (!Syphoning)
+        {
+            baseAttackDamage = veryBaseDamage;
+            Number();
+        }
+    }
+
 }

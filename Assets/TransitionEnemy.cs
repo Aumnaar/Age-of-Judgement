@@ -11,6 +11,7 @@ public class TransitionEnemy : StateMachineBehaviour
     {
         _swordKnight = animator.GetComponent<SwordKnight>();
         _swordKnight.walk = false;
+        animator.SetBool("_agressiveWalking", false);
         //_swordKnight.number = 1;
 
     }
@@ -23,15 +24,10 @@ public class TransitionEnemy : StateMachineBehaviour
             _swordKnight.walkSpeed = 0;
         }
 
-        if (_swordKnight._hasTarget == false)
+        if (_swordKnight._hasTarget == true && _swordKnight._hasAgro == true)
         {
-            _swordKnight.walk = true;
-        }
-
-        if (_swordKnight._hasTarget == true && _swordKnight._hasAgro)
-        {
-            float number = Random.Range(1, 6 + 2);
-            animator.SetFloat("attackNumber", number);
+            int number = Random.Range(0, 8);
+            animator.SetInteger("attackNumber1", number);
         }
 
 
@@ -43,10 +39,14 @@ public class TransitionEnemy : StateMachineBehaviour
     {
         _swordKnight.walkSpeed = 1;
 
-        if (_swordKnight._hasTarget == true && _swordKnight._hasAgro)
+        if (_swordKnight._hasTarget == false && _swordKnight._hasAgro == true)
         {
-            int number = Random.Range(1, 2);
-            animator.SetInteger("attackNumber", number);
+            animator.SetBool("_agressiveWalking", true);
+        }
+        else if (_swordKnight._hasTarget == false && _swordKnight._hasAgro == false)
+            {
+          
+            _swordKnight.FlipDirection();
         }
 
     }

@@ -23,7 +23,7 @@ public class EnemyBoss : MonoBehaviour
 
     float nextAttackTime = 0f;
 
-    public HealthBar healthbar;
+    //public HealthBar healthbar;
 
     void Start()
     {
@@ -31,7 +31,7 @@ public class EnemyBoss : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         currenthealth = maxHealth;
         //healthbar = GetComponent<HealthBar>();
-        healthbar.UpdateHealthBar(currenthealth);
+        //healthbar.UpdateHealthBar(currenthealth);
     }
 
     void Update()
@@ -56,7 +56,7 @@ public class EnemyBoss : MonoBehaviour
         {
             damagableHit.Invoke(damage, deliveredKnockback);
             currenthealth -= damage;
-            healthbar.UpdateHealthBar(currenthealth);
+            //healthbar.UpdateHealthBar(currenthealth);
             isInvincible = true;
 
         }

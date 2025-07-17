@@ -26,14 +26,12 @@ public class TouchingDirections : MonoBehaviour
 
     public bool IsWall { get { return _IsWall; } private set { _IsWall = value; } }
 
-    // Start is called before the first frame update
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         touchingCol = GetComponent<CapsuleCollider2D>();
     }
 
-    // Update is called once per frame
     void FixedUpdate()
     {
         IsGrounded = touchingCol.Cast(Vector2.down, castFilter, groundHits, groundDistance) > 0;

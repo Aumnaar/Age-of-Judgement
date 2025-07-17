@@ -26,7 +26,8 @@ public class SwordKnight : MonoBehaviour
     public Vector2 _directionVector = Vector2.right;
 
     public WalkableDirection WalkDirection
-    { get { return _walkDirection; }
+    {
+        get { return _walkDirection; }
         set
         {
 
@@ -45,8 +46,8 @@ public class SwordKnight : MonoBehaviour
             }
             _walkDirection = value;
         }
-        
-        
+
+
     }
 
     public bool _hasAgro = false;
@@ -68,37 +69,38 @@ public class SwordKnight : MonoBehaviour
         }
     }
 
-    private string currentState;
-    const string IDLE = "Idle";
-    const string WALK = "Walk";
+
 
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         touchingDirections = GetComponent<TouchingDirections>();
         _animator = GetComponent<Animator>();
-        //_animator.SetInteger("attackNumber", number);
     }
 
     
     void FixedUpdate()
     {
-        if (touchingDirections.IsGrounded && touchingDirections.IsWall || cliffDetectionZone.detectedColliders.Count == 0)
-        {
-            FlipDirection();
-        }
+        //rb.velocity = new Vector2(walkSpeed * _directionVector.x, rb.velocity.y);
 
-   
+        //if (touchingDirections.IsGrounded && touchingDirections.IsWall || cliffDetectionZone.detectedColliders.Count == 0)
+        //{
+        //    FlipDirection();
+        //}
+
+
     }
 
     void Update()
     {
         HasTarget = attackZone.detectedColliders.Count > 0;
 
-        if (_hasTarget == true && Time.time >= nextAttackTime)
+        if (_hasTarget == true)
         {
+            _animator.SetBool("_agressiveWalking", false);
             _animator.SetTrigger("hasTarget");
-            nextAttackTime = Time.time + 2f;
+          
+            walk = false;
         }
 
         if (walk == true)
@@ -115,21 +117,25 @@ public class SwordKnight : MonoBehaviour
         if (_hasAgro == true && _hasTarget == false)
         {
             _animator.SetBool("_agressiveWalking", true);
+            walk = false;
         }
         else if (_hasAgro == true && _hasTarget == true)
         {
             _animator.SetBool("_agressiveWalking", false);
+            walk = false;
          
         }
         else if (_hasAgro == false && _hasTarget == false)
         {
+            walk = true;
             _animator.SetBool("_isWalking", true);
             _animator.SetBool("_agressiveWalking", false);
+
         }
 
     }
 
-    private void FlipDirection()
+    public void FlipDirection()
     {
         if (WalkDirection == WalkableDirection.Right)
         {
@@ -145,13 +151,5 @@ public class SwordKnight : MonoBehaviour
         }
     }
 
-    void ChangeAnimationState(string NewState)
-    {
-        if (currentState == NewState) return;
-
-        _animator.Play(NewState);
-
-        currentState = NewState;
-
-    }
+   
 }

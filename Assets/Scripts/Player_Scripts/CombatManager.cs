@@ -28,10 +28,9 @@ public class CombatManager : MonoBehaviour
         if (Input.GetMouseButtonDown(0) && !_isAttacking)
         {
             _isAttacking = true;
-            
-         
 
         }
+            
 
 
      }

@@ -1,0 +1,236 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: GSTAtlas
+  m_EditorData:
+    serializedVersion: 2
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 1
+      compressionQuality: 50
+      maxTextureSize: 2048
+      textureCompression: 0
+      filterMode: 0
+      generateMipMaps: 0
+      readable: 0
+      crunchedCompression: 0
+      sRGB: 1
+    platformSettings:
+    - serializedVersion: 3
+      m_BuildTarget: DefaultTexturePlatform
+      m_MaxTextureSize: 4096
+      m_ResizeAlgorithm: 0
+      m_TextureFormat: -1
+      m_TextureCompression: 0
+      m_CompressionQuality: 50
+      m_CrunchedCompression: 0
+      m_AllowsAlphaSplitting: 0
+      m_Overridden: 0
+      m_AndroidETC2FallbackOverride: 0
+      m_ForceMaximumCompressionQuality_BC6H_BC7: 0
+    packingSettings:
+      serializedVersion: 2
+      padding: 4
+      blockOffset: 1
+      allowAlphaSplitting: 0
+      enableRotation: 1
+      enableTightPacking: 1
+      enableAlphaDilation: 0
+    secondaryTextureSettings: {}
+    variantMultiplier: 1
+    packables:
+    - {fileID: 2800000, guid: 8300517131a1f2744a12f4bcfdda660b, type: 3}
+    bindAsDefault: 1
+    isAtlasV2: 0
+    cachedData: {fileID: 0}
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites:
+  - {fileID: 1562707176, guid: 8300517131a1f2744a12f4bcfdda660b, type: 3}
+  - {fileID: 1789932912, guid: 8300517131a1f2744a12f4bcfdda660b, type: 3}
+  - {fileID: -460191409, guid: 8300517131a1f2744a12f4bcfdda660b, type: 3}
+  - {fileID: 805223714, guid: 8300517131a1f2744a12f4bcfdda660b, type: 3}
+  - {fileID: 1105150587, guid: 8300517131a1f2744a12f4bcfdda660b, type: 3}
+  - {fileID: -1595418428, guid: 8300517131a1f2744a12f4bcfdda660b, type: 3}
+  - {fileID: -57590307, guid: 8300517131a1f2744a12f4bcfdda660b, type: 3}
+  - {fileID: 488215780, guid: 8300517131a1f2744a12f4bcfdda660b, type: 3}
+  - {fileID: -1144661754, guid: 8300517131a1f2744a12f4bcfdda660b, type: 3}
+  - {fileID: -616981288, guid: 8300517131a1f2744a12f4bcfdda660b, type: 3}
+  - {fileID: 1465373678, guid: 8300517131a1f2744a12f4bcfdda660b, type: 3}
+  - {fileID: 69511213, guid: 8300517131a1f2744a12f4bcfdda660b, type: 3}
+  - {fileID: -734197806, guid: 8300517131a1f2744a12f4bcfdda660b, type: 3}
+  - {fileID: 924680869, guid: 8300517131a1f2744a12f4bcfdda660b, type: 3}
+  - {fileID: -32668167, guid: 8300517131a1f2744a12f4bcfdda660b, type: 3}
+  - {fileID: -1089469359, guid: 8300517131a1f2744a12f4bcfdda660b, type: 3}
+  - {fileID: -1122183171, guid: 8300517131a1f2744a12f4bcfdda660b, type: 3}
+  - {fileID: -1245367291, guid: 8300517131a1f2744a12f4bcfdda660b, type: 3}
+  - {fileID: 879173920, guid: 8300517131a1f2744a12f4bcfdda660b, type: 3}
+  - {fileID: 812207384, guid: 8300517131a1f2744a12f4bcfdda660b, type: 3}
+  - {fileID: -1591040815, guid: 8300517131a1f2744a12f4bcfdda660b, type: 3}
+  - {fileID: 337298210, guid: 8300517131a1f2744a12f4bcfdda660b, type: 3}
+  - {fileID: -822490639, guid: 8300517131a1f2744a12f4bcfdda660b, type: 3}
+  - {fileID: -1733974723, guid: 8300517131a1f2744a12f4bcfdda660b, type: 3}
+  - {fileID: 1978335149, guid: 8300517131a1f2744a12f4bcfdda660b, type: 3}
+  - {fileID: -2046579712, guid: 8300517131a1f2744a12f4bcfdda660b, type: 3}
+  - {fileID: 1615777131, guid: 8300517131a1f2744a12f4bcfdda660b, type: 3}
+  - {fileID: -535079591, guid: 8300517131a1f2744a12f4bcfdda660b, type: 3}
+  - {fileID: -808634231, guid: 8300517131a1f2744a12f4bcfdda660b, type: 3}
+  - {fileID: 560413182, guid: 8300517131a1f2744a12f4bcfdda660b, type: 3}
+  - {fileID: -1616144207, guid: 8300517131a1f2744a12f4bcfdda660b, type: 3}
+  - {fileID: -1834522935, guid: 8300517131a1f2744a12f4bcfdda660b, type: 3}
+  - {fileID: 1523475650, guid: 8300517131a1f2744a12f4bcfdda660b, type: 3}
+  - {fileID: -784156132, guid: 8300517131a1f2744a12f4bcfdda660b, type: 3}
+  - {fileID: -1256961904, guid: 8300517131a1f2744a12f4bcfdda660b, type: 3}
+  - {fileID: 1420049842, guid: 8300517131a1f2744a12f4bcfdda660b, type: 3}
+  - {fileID: 1840766005, guid: 8300517131a1f2744a12f4bcfdda660b, type: 3}
+  - {fileID: 936990903, guid: 8300517131a1f2744a12f4bcfdda660b, type: 3}
+  - {fileID: -2017428827, guid: 8300517131a1f2744a12f4bcfdda660b, type: 3}
+  - {fileID: -300724905, guid: 8300517131a1f2744a12f4bcfdda660b, type: 3}
+  - {fileID: -232991051, guid: 8300517131a1f2744a12f4bcfdda660b, type: 3}
+  - {fileID: 44471586, guid: 8300517131a1f2744a12f4bcfdda660b, type: 3}
+  - {fileID: 1910241774, guid: 8300517131a1f2744a12f4bcfdda660b, type: 3}
+  - {fileID: 1112622820, guid: 8300517131a1f2744a12f4bcfdda660b, type: 3}
+  - {fileID: -361362291, guid: 8300517131a1f2744a12f4bcfdda660b, type: 3}
+  - {fileID: 650472922, guid: 8300517131a1f2744a12f4bcfdda660b, type: 3}
+  - {fileID: 1439285625, guid: 8300517131a1f2744a12f4bcfdda660b, type: 3}
+  - {fileID: 625527372, guid: 8300517131a1f2744a12f4bcfdda660b, type: 3}
+  - {fileID: -957067425, guid: 8300517131a1f2744a12f4bcfdda660b, type: 3}
+  - {fileID: 791100705, guid: 8300517131a1f2744a12f4bcfdda660b, type: 3}
+  - {fileID: -2012165618, guid: 8300517131a1f2744a12f4bcfdda660b, type: 3}
+  - {fileID: -989420896, guid: 8300517131a1f2744a12f4bcfdda660b, type: 3}
+  - {fileID: -1999134515, guid: 8300517131a1f2744a12f4bcfdda660b, type: 3}
+  - {fileID: -510862693, guid: 8300517131a1f2744a12f4bcfdda660b, type: 3}
+  - {fileID: -1311790088, guid: 8300517131a1f2744a12f4bcfdda660b, type: 3}
+  - {fileID: -826387621, guid: 8300517131a1f2744a12f4bcfdda660b, type: 3}
+  - {fileID: -1437747062, guid: 8300517131a1f2744a12f4bcfdda660b, type: 3}
+  - {fileID: -1484593407, guid: 8300517131a1f2744a12f4bcfdda660b, type: 3}
+  - {fileID: 559322084, guid: 8300517131a1f2744a12f4bcfdda660b, type: 3}
+  - {fileID: -332018585, guid: 8300517131a1f2744a12f4bcfdda660b, type: 3}
+  - {fileID: -411008409, guid: 8300517131a1f2744a12f4bcfdda660b, type: 3}
+  - {fileID: 2139177076, guid: 8300517131a1f2744a12f4bcfdda660b, type: 3}
+  - {fileID: -1567164606, guid: 8300517131a1f2744a12f4bcfdda660b, type: 3}
+  - {fileID: -1521875462, guid: 8300517131a1f2744a12f4bcfdda660b, type: 3}
+  - {fileID: -2114410232, guid: 8300517131a1f2744a12f4bcfdda660b, type: 3}
+  - {fileID: -1926217166, guid: 8300517131a1f2744a12f4bcfdda660b, type: 3}
+  - {fileID: -688520885, guid: 8300517131a1f2744a12f4bcfdda660b, type: 3}
+  - {fileID: -1567739586, guid: 8300517131a1f2744a12f4bcfdda660b, type: 3}
+  - {fileID: -998790126, guid: 8300517131a1f2744a12f4bcfdda660b, type: 3}
+  - {fileID: -889347491, guid: 8300517131a1f2744a12f4bcfdda660b, type: 3}
+  - {fileID: -168458860, guid: 8300517131a1f2744a12f4bcfdda660b, type: 3}
+  - {fileID: -224669042, guid: 8300517131a1f2744a12f4bcfdda660b, type: 3}
+  - {fileID: -421014444, guid: 8300517131a1f2744a12f4bcfdda660b, type: 3}
+  - {fileID: -1191365996, guid: 8300517131a1f2744a12f4bcfdda660b, type: 3}
+  - {fileID: -526529892, guid: 8300517131a1f2744a12f4bcfdda660b, type: 3}
+  - {fileID: -1362252629, guid: 8300517131a1f2744a12f4bcfdda660b, type: 3}
+  - {fileID: 1561579886, guid: 8300517131a1f2744a12f4bcfdda660b, type: 3}
+  - {fileID: 1266987534, guid: 8300517131a1f2744a12f4bcfdda660b, type: 3}
+  - {fileID: -1256979956, guid: 8300517131a1f2744a12f4bcfdda660b, type: 3}
+  - {fileID: -1452378558, guid: 8300517131a1f2744a12f4bcfdda660b, type: 3}
+  - {fileID: -1645319384, guid: 8300517131a1f2744a12f4bcfdda660b, type: 3}
+  - {fileID: -452493027, guid: 8300517131a1f2744a12f4bcfdda660b, type: 3}
+  - {fileID: 733397511, guid: 8300517131a1f2744a12f4bcfdda660b, type: 3}
+  - {fileID: 1786289500, guid: 8300517131a1f2744a12f4bcfdda660b, type: 3}
+  - {fileID: -57524890, guid: 8300517131a1f2744a12f4bcfdda660b, type: 3}
+  - {fileID: -1957335043, guid: 8300517131a1f2744a12f4bcfdda660b, type: 3}
+  - {fileID: 855284998, guid: 8300517131a1f2744a12f4bcfdda660b, type: 3}
+  - {fileID: -1032013687, guid: 8300517131a1f2744a12f4bcfdda660b, type: 3}
+  - {fileID: -526156515, guid: 8300517131a1f2744a12f4bcfdda660b, type: 3}
+  - {fileID: 927220336, guid: 8300517131a1f2744a12f4bcfdda660b, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - GiantSkyTemple[Deepen]_20
+  - GiantSkyTemple[Deepen]_21
+  - GiantSkyTemple[Deepen]_91
+  - GiantSkyTemple[Deepen]_22
+  - GiantSkyTemple[Deepen]_42
+  - GiantSkyTemple[Deepen]_90
+  - GiantSkyTemple[Deepen]_103
+  - GiantSkyTemple[Deepen]_43
+  - GiantSkyTemple[Deepen]_93
+  - GiantSkyTemple[Deepen]_102
+  - GiantSkyTemple[Deepen]_40
+  - GiantSkyTemple[Deepen]_92
+  - GiantSkyTemple[Deepen]_101
+  - GiantSkyTemple[Deepen]_41
+  - GiantSkyTemple[Deepen]_55
+  - GiantSkyTemple[Deepen]_95
+  - GiantSkyTemple[Deepen]_100
+  - GiantSkyTemple[Deepen]_26
+  - GiantSkyTemple[Deepen]_46
+  - GiantSkyTemple[Deepen]_54
+  - GiantSkyTemple[Deepen]_27
+  - GiantSkyTemple[Deepen]_47
+  - GiantSkyTemple[Deepen]_57
+  - GiantSkyTemple[Deepen]_97
+  - GiantSkyTemple[Deepen]_106
+  - GiantSkyTemple[Deepen]_28
+  - GiantSkyTemple[Deepen]_56
+  - GiantSkyTemple[Deepen]_96
+  - GiantSkyTemple[Deepen]_105
+  - GiantSkyTemple[Deepen]_29
+  - GiantSkyTemple[Deepen]_45
+  - GiantSkyTemple[Deepen]_51
+  - GiantSkyTemple[Deepen]_99
+  - GiantSkyTemple[Deepen]_104
+  - GiantSkyTemple[Deepen]_50
+  - GiantSkyTemple[Deepen]_98
+  - GiantSkyTemple[Deepen]_53
+  - GiantSkyTemple[Deepen]_48
+  - GiantSkyTemple[Deepen]_52
+  - GiantSkyTemple[Deepen]_49
+  - GiantSkyTemple[Deepen]_59
+  - GiantSkyTemple[Deepen]_58
+  - GiantSkyTemple[Deepen]_79
+  - GiantSkyTemple[Deepen]_78
+  - GiantSkyTemple[Deepen]_76
+  - GiantSkyTemple[Deepen]_75
+  - GiantSkyTemple[Deepen]_74
+  - GiantSkyTemple[Deepen]_73
+  - GiantSkyTemple[Deepen]_72
+  - GiantSkyTemple[Deepen]_71
+  - GiantSkyTemple[Deepen]_33
+  - GiantSkyTemple[Deepen]_32
+  - GiantSkyTemple[Deepen]_31
+  - GiantSkyTemple[Deepen]_30
+  - GiantSkyTemple[Deepen]_37
+  - GiantSkyTemple[Deepen]_36
+  - GiantSkyTemple[Deepen]_35
+  - GiantSkyTemple[Deepen]_19
+  - GiantSkyTemple[Deepen]_34
+  - GiantSkyTemple[Deepen]_18
+  - GiantSkyTemple[Deepen]_39
+  - GiantSkyTemple[Deepen]_38
+  - GiantSkyTemple[Deepen]_68
+  - GiantSkyTemple[Deepen]_11
+  - GiantSkyTemple[Deepen]_13
+  - GiantSkyTemple[Deepen]_12
+  - GiantSkyTemple[Deepen]_64
+  - GiantSkyTemple[Deepen]_15
+  - GiantSkyTemple[Deepen]_65
+  - GiantSkyTemple[Deepen]_66
+  - GiantSkyTemple[Deepen]_86
+  - GiantSkyTemple[Deepen]_17
+  - GiantSkyTemple[Deepen]_67
+  - GiantSkyTemple[Deepen]_87
+  - GiantSkyTemple[Deepen]_16
+  - GiantSkyTemple[Deepen]_60
+  - GiantSkyTemple[Deepen]_84
+  - GiantSkyTemple[Deepen]_85
+  - GiantSkyTemple[Deepen]_62
+  - GiantSkyTemple[Deepen]_63
+  - GiantSkyTemple[Deepen]_80
+  - GiantSkyTemple[Deepen]_81
+  - GiantSkyTemple[Deepen]_2
+  - GiantSkyTemple[Deepen]_3
+  - GiantSkyTemple[Deepen]_0
+  - GiantSkyTemple[Deepen]_1
+  - GiantSkyTemple[Deepen]_6
+  - GiantSkyTemple[Deepen]_7
+  - GiantSkyTemple[Deepen]_4
+  - GiantSkyTemple[Deepen]_5
+  m_RenderDataMap: {}
+  m_Tag: GSTAtlas
+  m_IsVariant: 0

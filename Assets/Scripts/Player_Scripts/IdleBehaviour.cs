@@ -23,15 +23,11 @@ public class IdleBehaviour : StateMachineBehaviour
 
         if (CombatManager.instance._isAttacking && _playerMov.isGrounded())
         {
-            CombatManager.instance.anim.Play("HA1");
+            CombatManager.instance.anim.Play("StormHaloAttack_One");
         }
         else if (CombatManager.instance._isAttacking && !_playerMov.isGrounded())
         {
             CombatManager.instance.anim.Play("Aerial1");
-        }
-        else if (Input.GetKeyDown(KeyCode.R) && _playerMov.isGrounded())
-        {
-            CombatManager.instance.anim.Play("Crush");
         }
 
 

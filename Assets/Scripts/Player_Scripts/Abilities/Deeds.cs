@@ -27,6 +27,7 @@ public class Deeds : MonoBehaviour
  //   rb.constraints = RigidbodyConstraints2D.FreezeRotation ///
 
 
+
     void Awake()
     {
       

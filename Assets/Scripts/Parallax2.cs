@@ -25,7 +25,7 @@ public class Parallax2 : MonoBehaviour
     }
 
 
-    void LateUpdate()
+    void Update()
     {
        //float temp = (cameraTransform.position.x * (1 - parallaxEffectMultiplier.x)) ;
         Vector3 deltaMovement = cameraTransform.position - lastCameraPosition;
@@ -45,7 +45,7 @@ public class Parallax2 : MonoBehaviour
         //if (temp > startpos + length) startpos += length;
         //else if (temp < startpos - length) startpos -= length;
 
-        if (Mathf.Abs(transform.position.x - cameraTransform.position.x) >= textureUnitSizeX)
+        if (Mathf.Abs(transform.position.x - cameraTransform.position.x) > textureUnitSizeX)
         {
             float offsetPositionX = (cameraTransform.position.x - transform.position.x) % textureUnitSizeX;
             transform.position = new Vector3(cameraTransform.position.x + offsetPositionX, transform.position.y);

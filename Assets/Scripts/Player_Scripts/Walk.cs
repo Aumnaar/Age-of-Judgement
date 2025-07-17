@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using static UnityEngine.RuleTile.TilingRuleOutput;
 
 public class Walk : StateMachineBehaviour
 {
@@ -30,19 +31,18 @@ public class Walk : StateMachineBehaviour
             animator.SetBool("Walk", false);
         }
 
-
+        if (horizontalInput > 0)
+            animator.transform.localScale = Vector3.one;
+        else if (horizontalInput < 0)
+            animator.transform.localScale = new Vector3(-1, 1, 1);
 
         if (CombatManager.instance._isAttacking && _playerMov.isGrounded())
         {
-            CombatManager.instance.anim.Play("HA1");
+            CombatManager.instance.anim.Play("StormHaloAttack_One");
         }
         else if (CombatManager.instance._isAttacking && !_playerMov.isGrounded())
         {
             CombatManager.instance.anim.Play("Aerial1");
-        }
-        else if (Input.GetKeyDown(KeyCode.R) && _playerMov.isGrounded())
-        {
-            CombatManager.instance.anim.Play("Crush");
         }
 
     }

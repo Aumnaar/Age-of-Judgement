@@ -6,6 +6,7 @@ public class PlayerMov : MonoBehaviour
 {
 
     [SerializeField] private Deeds deeds;
+    [SerializeField] private CharacterMenu characterMenu;
 
     [Header ("Movement Parameters")]
     [SerializeField] private Rigidbody2D rb;
@@ -16,13 +17,13 @@ public class PlayerMov : MonoBehaviour
     public bool _isAttacking = false;
     public bool _walking;
     [SerializeField] int glideSpeed = 10;
+  
 
 
     [Header("SlopeManagment")]
     [SerializeField] private Transform raycastOrigin;
     [SerializeField] private Transform playerBottom;
     private RaycastHit2D Hit2D;
-
 
     [Header("Additional Jumps")]
     [SerializeField] private int extraJumps;
@@ -40,7 +41,14 @@ public class PlayerMov : MonoBehaviour
     [SerializeField] private float _groundCheckRadius;
     [SerializeField] private Vector3 _groundCheckPositionDelta;
 
-    [Header("Attacks")]
+    [Header("Trails")]
+    public ParticleSystem footprint;
+    public ParticleSystem footprint1;
+
+    [Header ("Menu")]
+    public bool menuOpened = false;
+    public bool menuPowersOpened = false;
+
 
 
     private string currentState;
@@ -78,10 +86,8 @@ public class PlayerMov : MonoBehaviour
 
         ////MOVEMENT//////
 
-        float horizontalInput = Input.GetAxis("Horizontal");
-        float verticalInput = Input.GetAxis("Vertical");
-
-
+        //float horizontalInput = Input.GetAxis("Horizontal");
+        //float verticalInput = Input.GetAxis("Vertical");
 
         //rb.velocity = new Vector2(horizontalInput * _speed, rb.velocity.y);
 
@@ -97,6 +103,20 @@ public class PlayerMov : MonoBehaviour
             deeds.Weather();
         }
 
+        if (Input.GetKeyDown(KeyCode.M) && !menuOpened)
+        {
+            characterMenu.EnableMenu();
+            menuOpened = true;
+            
+        }
+        else if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            characterMenu.DisableMenu();
+            menuOpened = false;
+            
+        }
+
+
         //if (isGrounded() && horizontalInput != 0 && _canWalk && !CombatManager.instance._isAttacking)
         //{
         //    //rb.velocity = new Vector2(horizontalInput * _speed, rb.velocity.y);
@@ -111,25 +131,25 @@ public class PlayerMov : MonoBehaviour
         //    //anim.Play("Idle");
         //    ChangeAnimationState(IDLE);
         //}
-  
-
-        if (horizontalInput > 0)
-            transform.localScale = Vector3.one;
-        else if (horizontalInput < 0)
-            transform.localScale = new Vector3(-1, 1, 1);
 
 
-        if (isGrounded() && horizontalInput == 0)
-        {
-            rb.velocity = Vector2.zero;
-            rb.isKinematic = true;
-            rb.constraints = RigidbodyConstraints2D.FreezePositionX | RigidbodyConstraints2D.FreezeRotation;
-        }
-        else
-        {
-            rb.isKinematic = false;
-            rb.constraints = RigidbodyConstraints2D.FreezeRotation;
-        }
+        //if (horizontalInput > 0)
+        //    transform.localScale = Vector3.one;
+        //else if (horizontalInput < 0)
+        //    transform.localScale = new Vector3(-1, 1, 1);
+
+
+        //if (isGrounded() && horizontalInput == 0)
+        //{
+        //    rb.velocity = Vector2.zero;
+        //    rb.isKinematic = true;
+        //    rb.constraints = RigidbodyConstraints2D.FreezePositionX | RigidbodyConstraints2D.FreezeRotation;
+        //}
+        //else
+        //{
+        //    rb.isKinematic = false;
+        //    rb.constraints = RigidbodyConstraints2D.FreezeRotation;
+        //}
 
 
 
@@ -148,6 +168,7 @@ public class PlayerMov : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.W) && isGrounded())
         {
             anim.SetTrigger("Jump");
+            Jump();
         }
         else if (Input.GetKeyDown(KeyCode.W) && !isGrounded())
         {
@@ -203,15 +224,17 @@ public class PlayerMov : MonoBehaviour
     }
     
     private void Jump2()
-    {        
+    {
+        float horizontalInput = Input.GetAxis("Horizontal");
+
         if (!isGrounded() && coyoteCounter > 0)
         {
-            rb.velocity = new Vector2(rb.velocity.x, _jumpPower);
+            rb.velocity = new Vector2(horizontalInput * _speed, _jumpPower);
             
         }
         else if (!isGrounded() && coyoteCounter <= 0 && jumpCounter > 0)
         {
-            rb.velocity = new Vector2(rb.velocity.x, _jumpPower);
+            rb.velocity = new Vector2(horizontalInput * _speed, _jumpPower);
             jumpCounter--;
            
         }
@@ -227,6 +250,16 @@ public class PlayerMov : MonoBehaviour
     {
         Gizmos.color = isGrounded() ? Color.green : Color.red;
         Gizmos.DrawSphere(transform.position + _groundCheckPositionDelta, _groundCheckRadius);
+    }
+
+    public void CreateFootprint()
+    {
+        footprint.Play();
+    }
+
+    public void CreateFootprint1()
+    {
+        footprint1.Play();
     }
 
     void ChangeAnimationState(string NewState)
