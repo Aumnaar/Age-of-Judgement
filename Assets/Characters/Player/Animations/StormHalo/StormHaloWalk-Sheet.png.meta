@@ -47,7 +47,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 75
+  spritePixelsToUnits: 65
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -110,8 +110,8 @@ TextureImporter:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 180
-        height: 130
+        width: 181
+        height: 123
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -129,10 +129,10 @@ TextureImporter:
       name: StormHaloWalk-Sheet_1
       rect:
         serializedVersion: 2
-        x: 180
+        x: 181
         y: 0
-        width: 180
-        height: 130
+        width: 181
+        height: 123
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -150,10 +150,10 @@ TextureImporter:
       name: StormHaloWalk-Sheet_2
       rect:
         serializedVersion: 2
-        x: 360
+        x: 362
         y: 0
-        width: 180
-        height: 130
+        width: 181
+        height: 123
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -171,10 +171,10 @@ TextureImporter:
       name: StormHaloWalk-Sheet_3
       rect:
         serializedVersion: 2
-        x: 540
+        x: 543
         y: 0
-        width: 180
-        height: 130
+        width: 181
+        height: 123
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -192,10 +192,10 @@ TextureImporter:
       name: StormHaloWalk-Sheet_4
       rect:
         serializedVersion: 2
-        x: 720
+        x: 724
         y: 0
-        width: 180
-        height: 130
+        width: 181
+        height: 123
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -213,10 +213,10 @@ TextureImporter:
       name: StormHaloWalk-Sheet_5
       rect:
         serializedVersion: 2
-        x: 900
+        x: 905
         y: 0
-        width: 180
-        height: 130
+        width: 181
+        height: 123
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -234,10 +234,10 @@ TextureImporter:
       name: StormHaloWalk-Sheet_6
       rect:
         serializedVersion: 2
-        x: 1080
+        x: 1086
         y: 0
-        width: 180
-        height: 130
+        width: 181
+        height: 123
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -255,10 +255,10 @@ TextureImporter:
       name: StormHaloWalk-Sheet_7
       rect:
         serializedVersion: 2
-        x: 1260
+        x: 1267
         y: 0
-        width: 180
-        height: 130
+        width: 181
+        height: 123
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -276,10 +276,10 @@ TextureImporter:
       name: StormHaloWalk-Sheet_8
       rect:
         serializedVersion: 2
-        x: 1440
+        x: 1448
         y: 0
-        width: 180
-        height: 130
+        width: 181
+        height: 123
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -297,10 +297,10 @@ TextureImporter:
       name: StormHaloWalk-Sheet_9
       rect:
         serializedVersion: 2
-        x: 1620
+        x: 1629
         y: 0
-        width: 180
-        height: 130
+        width: 181
+        height: 123
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -318,10 +318,10 @@ TextureImporter:
       name: StormHaloWalk-Sheet_10
       rect:
         serializedVersion: 2
-        x: 1800
+        x: 1810
         y: 0
-        width: 180
-        height: 130
+        width: 181
+        height: 123
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -339,10 +339,10 @@ TextureImporter:
       name: StormHaloWalk-Sheet_11
       rect:
         serializedVersion: 2
-        x: 1980
+        x: 1991
         y: 0
-        width: 180
-        height: 130
+        width: 181
+        height: 123
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -360,10 +360,10 @@ TextureImporter:
       name: StormHaloWalk-Sheet_12
       rect:
         serializedVersion: 2
-        x: 2160
+        x: 2172
         y: 0
-        width: 180
-        height: 130
+        width: 181
+        height: 123
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -381,10 +381,10 @@ TextureImporter:
       name: StormHaloWalk-Sheet_13
       rect:
         serializedVersion: 2
-        x: 2340
+        x: 2353
         y: 0
-        width: 180
-        height: 130
+        width: 181
+        height: 123
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -392,7 +392,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 46c5d568a0d8b5e4691cbae7fc3c7e59
+      spriteID: 712d459425129b4489c613a6be9bc9e3
       internalID: 1435915807
       vertices: []
       indices: 
@@ -415,6 +415,7 @@ TextureImporter:
       StormHaloWalk-Sheet_11: -1580236883
       StormHaloWalk-Sheet_12: -226946931
       StormHaloWalk-Sheet_13: 1435915807
+      StormHaloWalk-Sheet_14: -818164714
       StormHaloWalk-Sheet_2: 2046470952
       StormHaloWalk-Sheet_3: -914171437
       StormHaloWalk-Sheet_4: 1205758226

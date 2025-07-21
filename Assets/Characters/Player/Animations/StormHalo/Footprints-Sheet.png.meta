@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: dd6df70ff5b1df54e84ff6c0b696d8a1
+guid: eef840bdf15c41741a3e4e3963bc29a4
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -47,7 +47,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 65
+  spritePixelsToUnits: 64
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -67,7 +67,7 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 8192
+    maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 0
@@ -105,43 +105,106 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: StormHaloTransition-Sheet_0
+      name: Footprints-Sheet_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 290
-        height: 162
-      alignment: 9
-      pivot: {x: 0.5, y: 0.4}
+        width: 96
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e0fe2fe83b140d04198cbae07f786c6f
-      internalID: -2081056793
+      spriteID: 5161f36adef7bd04d8a986a614fa69e9
+      internalID: -672302836
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: StormHaloTransition-Sheet_1
+      name: Footprints-Sheet_1
       rect:
         serializedVersion: 2
-        x: 290
+        x: 96
         y: 0
-        width: 290
-        height: 162
-      alignment: 9
-      pivot: {x: 0.5, y: 0.4}
+        width: 96
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fa7fcad3116809e45b4cbb7eccda7cf4
-      internalID: -706899649
+      spriteID: 562642137eb1f26488dfa36ea3cbd9f6
+      internalID: -379425420
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Footprints-Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 0
+        width: 96
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ba5d5efc36ad3e4c83204397a32e907
+      internalID: 606623058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Footprints-Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 0
+        width: 96
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4bf1962495158e147ade3429a5ef445d
+      internalID: -654101956
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Footprints-Sheet_4
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 0
+        width: 96
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2eea1002afef24046a3eb7212242466a
+      internalID: -971493316
       vertices: []
       indices: 
       edges: []
@@ -157,8 +220,16 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      StormHaloTransition-Sheet_0: -2081056793
-      StormHaloTransition-Sheet_1: -706899649
+      Footprints-Sheet_0: -672302836
+      Footprints-Sheet_1: -379425420
+      Footprints-Sheet_2: 606623058
+      Footprints-Sheet_3: -654101956
+      Footprints-Sheet_4: -971493316
+      Footprints-Sheet_5: 1688888651
+      Footprints-Sheet_6: 1313210591
+      Footprints-Sheet_7: 558920262
+      Footprints-Sheet_8: -187925568
+      Footprints-Sheet_9: -1451046258
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

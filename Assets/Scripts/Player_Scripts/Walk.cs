@@ -1,13 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using static UnityEngine.RuleTile.TilingRuleOutput;
+//using static UnityEngine.RuleTile.TilingRuleOutput;
 
 public class Walk : StateMachineBehaviour
 {
     [SerializeField] private float _speed;
     [SerializeField] private Rigidbody2D rb;
     [SerializeField] private PlayerMov _playerMov;
+   
 
     // OnStateEnter is called when a transition starts and the state machine starts to evaluate this state
     override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
@@ -29,6 +30,7 @@ public class Walk : StateMachineBehaviour
         if (horizontalInput == 0)
         {
             animator.SetBool("Walk", false);
+            
         }
 
         if (horizontalInput > 0)

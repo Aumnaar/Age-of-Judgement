@@ -15,7 +15,6 @@ public class PlayerMov : MonoBehaviour
     [SerializeField] private float _jumpPower;
     [SerializeField] public bool _canWalk;
     public bool _isAttacking = false;
-    public bool _walking;
     [SerializeField] int glideSpeed = 10;
   
 
@@ -42,8 +41,9 @@ public class PlayerMov : MonoBehaviour
     [SerializeField] private Vector3 _groundCheckPositionDelta;
 
     [Header("Trails")]
-    public ParticleSystem footprint;
-    public ParticleSystem footprint1;
+    //public ParticleSystem footprint;
+    //public ParticleSystem footprint1;
+    public Animator _footprints;
 
     [Header ("Menu")]
     public bool menuOpened = false;
@@ -65,7 +65,6 @@ public class PlayerMov : MonoBehaviour
 
     void Awake()
     {
-        _walking = false;
         _canWalk = true;
         rb = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
@@ -88,6 +87,17 @@ public class PlayerMov : MonoBehaviour
 
         //float horizontalInput = Input.GetAxis("Horizontal");
         //float verticalInput = Input.GetAxis("Vertical");
+
+        var speed = rb.velocity.x;
+
+        if (speed != 0)
+        {
+            _footprints.SetBool("Print", true);
+        }
+        else if (speed == 0)
+        {
+            _footprints.SetBool("Print", false);
+        }
 
         //rb.velocity = new Vector2(horizontalInput * _speed, rb.velocity.y);
 
@@ -252,15 +262,15 @@ public class PlayerMov : MonoBehaviour
         Gizmos.DrawSphere(transform.position + _groundCheckPositionDelta, _groundCheckRadius);
     }
 
-    public void CreateFootprint()
-    {
-        footprint.Play();
-    }
+    //public void CreateFootprint()
+    //{
+    //    footprint.Play();
+    //}
 
-    public void CreateFootprint1()
-    {
-        footprint1.Play();
-    }
+    //public void CreateFootprint1()
+    //{
+    //    footprint1.Play();
+    //}
 
     void ChangeAnimationState(string NewState)
     {
