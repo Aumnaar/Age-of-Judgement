@@ -27,19 +27,21 @@ public class PlayerCombat : MonoBehaviour
     public float waiting = 1f;
     public Animator animator;
 
-    float nextAttackTime = 0f;
+    public Animator _effect1;
+    public bool _effect1True = false;
+  
 
     private void Start()
     {
         veryBaseDamage = baseAttackDamage;
         animator = GetComponent<Animator>();
-        //baseAttackDamage = 10;
         Number();
     }
 
     private void Update()
     {
-       
+     
+
 
         if (Input.GetKeyDown(KeyCode.R) && characterMenu.StormCrushActive && playerMov.isGrounded() && herohealth.currentMana >= stormCrushManaCost)
         {
@@ -78,5 +80,9 @@ public class PlayerCombat : MonoBehaviour
             Number();
         }
     }
+
+   
+
+    
 
 }

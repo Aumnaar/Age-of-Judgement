@@ -6,6 +6,7 @@ public class IdleBehaviour : StateMachineBehaviour
 {
     [SerializeField] private PlayerMov _playerMov;
     [SerializeField] private Rigidbody2D rb;
+    
 
     // OnStateEnter is called when a transition starts and the state machine starts to evaluate this state
     override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
@@ -19,7 +20,8 @@ public class IdleBehaviour : StateMachineBehaviour
     {
         float horizontalInput = Input.GetAxis("Horizontal");
         float verticalInput = Input.GetAxis("Vertical");
-
+     
+        
 
         if (CombatManager.instance._isAttacking && _playerMov.isGrounded())
         {

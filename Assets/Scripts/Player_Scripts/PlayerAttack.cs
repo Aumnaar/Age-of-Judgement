@@ -22,11 +22,13 @@ public class PlayerAttack : MonoBehaviour
 
     public void OnTriggerEnter2D(Collider2D collision)
     {
+        
         Enemy enemy = collision.GetComponent<Enemy>();
         EnemyBoss enemyBoss = collision.GetComponent<EnemyBoss>();
 
         if (enemy != null)
         {
+           
             Vector2 direction = (collision.transform.position - transform.position).normalized;
             Vector2 knockback = direction * knockbackForce;
 
@@ -37,7 +39,7 @@ public class PlayerAttack : MonoBehaviour
             enemy.GetComponent<Enemy>().OnHit(knockback);
 
             herohealth.PlusMana(pc.baseManaRegen);
-          
+
 
         }
     }

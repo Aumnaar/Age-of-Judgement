@@ -8,7 +8,8 @@ public class Walk : StateMachineBehaviour
     [SerializeField] private float _speed;
     [SerializeField] private Rigidbody2D rb;
     [SerializeField] private PlayerMov _playerMov;
-   
+    [SerializeField] private PlayerCombat _playerCombat;
+
 
     // OnStateEnter is called when a transition starts and the state machine starts to evaluate this state
     override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)

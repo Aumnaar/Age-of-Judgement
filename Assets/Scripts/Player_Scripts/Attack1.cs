@@ -11,6 +11,7 @@ public class Attack1 : StateMachineBehaviour
     {
        _playerMov = animator.GetComponent<PlayerMov>();
         _playerMov._canWalk = false;
+        
     }
 
     // OnStateUpdate is called on each Update frame between OnStateEnter and OnStateExit callbacks
