@@ -20,7 +20,7 @@ public class AttackWalking : StateMachineBehaviour
     // OnStateUpdate is called on each Update frame between OnStateEnter and OnStateExit callbacks
     override public void OnStateUpdate(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
-        if (enemy._hasTarget && enemy._hasAgro)
+        if (enemy._hasAgro)
         {
             Vector2 target = new Vector2(player.position.x, rb.position.y);
             Vector2 newPos = Vector2.MoveTowards(rb.position, target, enemy.walkSpeed * Time.fixedDeltaTime);

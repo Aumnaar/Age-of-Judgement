@@ -26,6 +26,7 @@ public class Enemy : MonoBehaviour
     public int maxHealth = 80;
     public int currenthealth;
     public float walkSpeed = 3f; /*actual walkSpeed in animationBehaviour*/
+    public float decayTime = 5f;
 
     [Header("Stun and stagger")]
     public int Stun = 100;
@@ -210,10 +211,12 @@ public class Enemy : MonoBehaviour
             if (_hasTarget == true && _hasAgro == true)
             {
                 animator.SetFloat("xVelocity", 1);
+                animator.SetBool("hasTarget", true);
             }
             else if (_hasTarget == false && _hasAgro == true)
             {
-                animator.SetFloat("xVelocity", 0);
+                //animator.SetFloat("xVelocity", 0);
+                animator.SetBool("hasTarget", false);
             }
             else if (_hasAgro == false)
             {
@@ -254,7 +257,6 @@ public class Enemy : MonoBehaviour
 
         if (!isInvincible && !isStunned && !isUnstaggerable && currentStagger >= Stagger)
         {
-            gameObject.transform.localScale = Random.insideUnitCircle * 3;
         StartCoroutine(StaggerTime(staggerTime));
             currentStagger = 0;
         }
@@ -314,11 +316,23 @@ public class Enemy : MonoBehaviour
     IEnumerator StaggerTime(float staggerTime)
     {
         isUnstaggerable = true;
-        rend.material.color = Color.red;
+        animator.SetTrigger("Stagger");
         yield return new WaitForSeconds(staggerTime);
-        rend.material.color = Color.white;
-       
+        animator.SetTrigger("noStun");
+
+
+
+    }
+
+    private IEnumerator DecayTime(float decayTime)
+    {
+        yield return new WaitForSeconds(decayTime);
+        GetComponent<Collider2D>().enabled = false;
+        GetComponent<SpriteRenderer>().enabled = false;
+        this.enabled = false;
+        Destroy(this);
         
+
 
     }
 
@@ -326,11 +340,9 @@ public class Enemy : MonoBehaviour
     {
         if (!isAlive)
         {
+            animator.SetTrigger("Destruction");
             Debug.Log("Enemy died");
-            GetComponent<Collider2D>().enabled = false;
-            GetComponent<SpriteRenderer>().enabled = false;
-            this.enabled = false;
-            Destroy(this);
+            StartCoroutine(DecayTime(decayTime));
         }
     }
 
